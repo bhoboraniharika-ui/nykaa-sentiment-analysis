@@ -1,32 +1,35 @@
-# nykaa-sentiment-analysis
-Analysis of 5,000+ Google Play Store reviews for the Nykaa app (Feb–Mar 2026)
+# Nykaa Sentiment Analysis
+
+Analysis of 5,000 Google Play Store reviews for the Nykaa app (Feb–Apr 2026)
 to identify the root causes of negative sentiment and surface actionable
 product recommendations.
 
 ## Overview
 
 - Data source: Google Play Store (via `google-play-scraper`)
-- Reviews scraped: 5,000 (Feb 8 – Mar 22, 2026)
-- **Negative reviews analysed:** 1,055
-- **Overall app rating (period):** 3.96 / 5.0
+- Reviews scraped: 5,000 (Feb 8 – Apr 12, 2026)
+- Negative reviews analysed: 1,055
+- Overall app rating (period): 3.96 / 5.0
 
 ## Key Findings
 
 1. Delivery is the #1 complaint — 379 of 685 categorised negative reviews
-   (55.3%) are about delivery failures, making it the dominant retention risk.
+   (55.3%) are about delivery failures across all 7 weeks of the analysis period.
 
-2. ETA promises are broken — High-upvote reviews (👍122, 👍104, 👍98)
-   cite same-day delivery shown at checkout but not honoured.
+2. ETA promises are broken — High-upvote reviews (👍32, 👍8) cite same-day
+   delivery shown at checkout but not honoured. Nykaa Now's '60-minute delivery'
+   promise was found changing to 'by end of day' after order placement.
 
-3. No delivery partner visibility — Users cannot see which logistics
-   partner (e.g. Xpressbees) is handling their order, forcing all escalations
-   to Nykaa's customer support.
+3. No delivery partner visibility — 360 out of 379 delivery complaints (95%)
+   do not name a specific partner, forcing all escalations to Nykaa's customer
+   support. Shadowfax and BlueDart had the most mentions (7 each), followed by
+   Delhivery (4) and Xpressbees (2).
 
 ## Charts
 
-![Complaint Categories](images/nykaa_complaint_categories.png)
-![Complaints Excluding Noise](images/nykaa_complaints_clean.png)
-![Rating Trend](images/nykaa_rating_trend.png)
+![Complaint Categories](nykaa_complaint_categories.png)
+![Complaints Excluding Noise](nykaa_complaints_clean.png)
+![Rating Trend](nykaa_rating_trend.png)
 
 ## How to Run
 
