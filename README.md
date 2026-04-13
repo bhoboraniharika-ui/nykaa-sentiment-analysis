@@ -28,6 +28,7 @@ product recommendations.
 ## Charts
 
 ![Complaint Categories](nykaa_complaint_categories.png)
+![Complaint Categories](nykaa_delivery_trend.png)
 ![Complaints Excluding Noise](nykaa_complaints_clean.png)
 ![Rating Trend](nykaa_rating_trend.png)
 
